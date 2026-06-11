@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio of Anirban Sasmal, a software engineer specializing in Java, SQL, Python, and Machine Learning. View my education, projects, skills, and certifications.">
+    <meta name="keywords" content="Anirban Sasmal, Portfolio, Software Developer, Java, SQL, Python, Machine Learning, B.Tech CSE, Student Grade Tracker">
+    <meta name="author" content="Anirban Sasmal">
+    
+    <!-- Title -->
+    <title>Anirban Sasmal | Software Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Ambient Background Canvas / Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="ambient-glow glow-3"></div>
+
+    <!-- Header / Sticky Navigation -->
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#hero" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>Anirban<span class="logo-accent"> /&gt;</span>
+            </a>
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active" id="link-hero">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="link-about">Education</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link" id="link-certifications">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <span class="hero-greeting fade-in-up">Welcome to my space</span>
+                <h1 class="hero-title fade-in-up delay-1">Hi, I'm <span class="highlight-text">Anirban Sasmal</span></h1>
+                <h2 class="hero-subtitle fade-in-up delay-2">
+                    I am a <span id="typing-text" class="typing-cursor"></span>
+                </h2>
+                <p class="hero-description fade-in-up delay-3">
+                    A dedicated developer passionate about building scalable, high-performance software and diving deep into data analysis. Experienced in Java desktop architectures, database engineering, and modern machine learning concepts.
+                </p>
+                <div class="hero-ctas fade-in-up delay-4">
+                    <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+                        View Projects
+                        <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Contact Me</a>
+                </div>
+                <div class="hero-socials fade-in-up delay-5">
+                    <a href="https://github.com/anirban0021" target="_blank" rel="noopener noreferrer" class="social-icon" id="hero-social-github" aria-label="GitHub Profile">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anirban-239b3a329" target="_blank" rel="noopener noreferrer" class="social-icon" id="hero-social-linkedin" aria-label="LinkedIn Profile">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:anirbansasmal21@gmail.com" class="social-icon" id="hero-social-email" aria-label="Email Address">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in-up delay-3">
+                <div class="hero-visual-wrapper">
+                    <!-- Layer 1: Professional Profile Image -->
+                    <div class="profile-frame">
+                        <img src="profile.jpg" alt="Anirban Sasmal Profile Picture">
+                    </div>
+                    <!-- Layer 2: Glowing code container (offset in background) -->
+                    <div class="visual-card">
+                        <div class="visual-card-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="tab-title">developer.java</span>
+                        </div>
+                        <div class="visual-card-body">
+                            <pre><code><span class="code-keyword">public class</span> <span class="code-class">Developer</span> {
+    <span class="code-keyword">private</span> String name = <span class="code-string">"Anirban Sasmal"</span>;
+    <span class="code-keyword">private</span> String[] skills = {
+        <span class="code-string">"Java"</span>, <span class="code-string">"SQL"</span>, <span class="code-string">"Python"</span>, <span class="code-string">"ML"</span>
+    };
+    
+    <span class="code-keyword">public void</span> <span class="code-method">code</span>() {
+        System.out.println(<span class="code-string">"Hello World!"</span>);
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" id="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                    <span class="arrow"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Education Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-subtitle">Academic Journey</span>
+                <h2 class="section-title">Education & Profile</h2>
+                <div class="section-underline"></div>
+
+                <div class="about-grid">
+                    <div class="about-info-panel">
+                        <h3>Background</h3>
+                        <p>
+                            I am a detail-oriented software developer driven by curiosity and structured logic. With a strong foundation in Object-Oriented Programming, Data Structures, and Database Management, I enjoy building applications that are highly functional and clean. I look for ways to optimize code quality, maintain database integrity, and explore machine learning datasets to derive meaningful actions.
+                        </p>
+                        
+                        <div class="profile-details-grid">
+                            <div class="detail-item">
+                                <span class="detail-label">Name</span>
+                                <span class="detail-value">Anirban Sasmal</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Current Status</span>
+                                <span class="detail-value">Computer Science Student</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">West Bengal, India</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Contact</span>
+                                <span class="detail-value">anirbansasmal21@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="education-timeline">
+                        <h3>Timeline</h3>
+                        <div class="timeline-container">
+                            <!-- Higher Education -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">Current</div>
+                                <div class="timeline-card">
+                                    <h4 class="degree-title">Computer Science &amp; Engineering</h4>
+                                    <p class="school-name">Higher Education Degree</p>
+                                    <div class="grade-badge">
+                                        <svg class="badge-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="8" r="7"></circle>
+                                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                        </svg>
+                                        Current CGPA: <strong>8.00 / 10.00</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Class 12 -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2023</div>
+                                <div class="timeline-card">
+                                    <h4 class="degree-title">Class 12th High School (WBCHSE)</h4>
+                                    <p class="school-name">Shyam Sundarpur Patna High School (H.S)</p>
+                                    <div class="grade-badge">
+                                        <svg class="badge-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                                        </svg>
+                                        Score: <strong>72.80%</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Class 10 -->
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-date">2021</div>
+                                <div class="timeline-card">
+                                    <h4 class="degree-title">Class 10th School (WBBSE)</h4>
+                                    <p class="school-name">Shyam Sundarpur Patna High School (H.S)</p>
+                                    <div class="grade-badge">
+                                        <svg class="badge-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                            <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                                        </svg>
+                                        Score: <strong>93.57%</strong>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-subtitle">What I bring to the table</span>
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="section-underline"></div>
+
+                <!-- Filters -->
+                <div class="skills-filters" id="skills-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">All Skills</button>
+                    <button class="filter-btn" data-filter="languages" id="filter-languages">Languages</button>
+                    <button class="filter-btn" data-filter="tools" id="filter-tools">Tools &amp; Platforms</button>
+                    <button class="filter-btn" data-filter="concepts" id="filter-concepts">Core Concepts</button>
+                </div>
+
+                <!-- Skills List -->
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Languages -->
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">01</span>
+                        </div>
+                        <h3>Java</h3>
+                        <p class="skill-type">Programming Language</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">02</span>
+                        </div>
+                        <h3>SQL</h3>
+                        <p class="skill-type">Database Query Language</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">03</span>
+                        </div>
+                        <h3>Python</h3>
+                        <p class="skill-type">Programming Language</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">04</span>
+                        </div>
+                        <h3>C</h3>
+                        <p class="skill-type">Programming Language</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 70%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="languages">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">05</span>
+                        </div>
+                        <h3>C++</h3>
+                        <p class="skill-type">Programming Language</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 70%"></div></div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">06</span>
+                        </div>
+                        <h3>Git &amp; GitHub</h3>
+                        <p class="skill-type">Version Control &amp; Collaboration</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">07</span>
+                        </div>
+                        <h3>Cisco Packet Tracer</h3>
+                        <p class="skill-type">Network Design &amp; Simulation</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 65%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="tools">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">08</span>
+                        </div>
+                        <h3>Google Forms Analytics</h3>
+                        <p class="skill-type">Data Aggregation &amp; Insights</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 70%"></div></div>
+                    </div>
+
+                    <!-- Core Concepts -->
+                    <div class="skill-card" data-category="concepts">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">09</span>
+                        </div>
+                        <h3>Data Structures &amp; Algorithms</h3>
+                        <p class="skill-type">Analytical Foundations (DSA)</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 80%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="concepts">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">10</span>
+                        </div>
+                        <h3>Database Management (DBMS)</h3>
+                        <p class="skill-type">Database Architectures &amp; Normalization</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="concepts">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">11</span>
+                        </div>
+                        <h3>Object-Oriented Design (OOPs)</h3>
+                        <p class="skill-type">Abstraction, Inheritance, Polymorphism</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="concepts">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">12</span>
+                        </div>
+                        <h3>Computer Networks (CN)</h3>
+                        <p class="skill-type">ISO/OSI &amp; TCP/IP Network Protocols</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 75%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="concepts">
+                        <div class="skill-icon-wrap">
+                            <span class="skill-icon-num">13</span>
+                        </div>
+                        <h3>Machine Learning Analytics</h3>
+                        <p class="skill-type">Predictive Modeling &amp; Insights</p>
+                        <div class="skill-progress"><div class="progress-bar" style="width: 70%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-subtitle">My Portfolio Project</span>
+                <h2 class="section-title">Featured Project</h2>
+                <div class="section-underline"></div>
+
+                <div class="project-showcase">
+                    <div class="project-details">
+                        <span class="project-tag">Java Desktop Application</span>
+                        <h3>Student Grade Tracker</h3>
+                        <p class="project-desc">
+                            A lightweight, cross-platform Java desktop application designed for educational instructors to quickly capture student names and grades, track logs dynamically, and produce immediate analytical performance summaries.
+                        </p>
+                        
+                        <h4 class="specs-title">Key Core Features:</h4>
+                        <ul class="project-features">
+                            <li>
+                                <strong>Intuitive GUI Layout:</strong> Structured split layout containing a clean grid input dashboard on top and a high-readability monospace ledger feed on the bottom.
+                            </li>
+                            <li>
+                                <strong>Real-Time Logs &amp; Tabular Display:</strong> Displays a running ledger feed of registered students with clean formatting and column-aligned spacing.
+                            </li>
+                            <li>
+                                <strong>Smart Class Analytics:</strong> Computes the total student count, calculates the exact mathematical class average, and detects high/low boundaries.
+                            </li>
+                            <li>
+                                <strong>Tie Support for Extremes:</strong> If multiple students earn the same highest/lowest scores, the analytical algorithm lists their names grouped neatly by commas.
+                            </li>
+                            <li>
+                                <strong>Input Defenses &amp; Overlays:</strong> Modal popup message alerts protecting inputs from blank submissions, negative grades, or out-of-range text errors.
+                            </li>
+                            <li>
+                                <strong>Quality of Life Upgrades:</strong> Supports instant keyboard submission using the Enter key and utilizes the operating system's native window frame decorations.
+                            </li>
+                        </ul>
+
+                        <div class="project-tech-stack">
+                            <span>Java</span>
+                            <span>Java Swing</span>
+                            <span>AWT</span>
+                            <span>Cross-Platform GUI</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/anirban0021/Project_StudentGradeTracker" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="project-btn-github">
+                                <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                                GitHub Repository
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-preview-card">
+                        <div class="project-preview-mockup">
+                            <div class="mockup-header">
+                                <div class="mockup-circle"></div>
+                                <div class="mockup-circle"></div>
+                                <div class="mockup-circle"></div>
+                                <span class="mockup-title">StudentGradeTracker.jar</span>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="mockup-form">
+                                    <div class="form-row">
+                                        <span class="mockup-lbl">Student Name:</span>
+                                        <div class="mockup-txt-field">Rahul Sen</div>
+                                    </div>
+                                    <div class="form-row">
+                                        <span class="mockup-lbl">Student Grade:</span>
+                                        <div class="mockup-txt-field">95.5</div>
+                                    </div>
+                                    <button class="mockup-btn" type="button">Add Grade</button>
+                                </div>
+                                <hr class="mockup-divider">
+                                <div class="mockup-terminal">
+                                    <span class="mockup-term-line success">&gt; Rahul Sen - 95.5 Added.</span>
+                                    <span class="mockup-term-line">&gt; Priya Sharma - 98.0 Added.</span>
+                                    <span class="mockup-term-line">&gt; Amit Das - 95.5 Added.</span>
+                                    <span class="mockup-term-line alert">&gt; Summary Report Generated.</span>
+                                    <span class="mockup-term-line text-blue">==========================================</span>
+                                    <span class="mockup-term-line text-blue">Total Students  : 3</span>
+                                    <span class="mockup-term-line text-blue">Class Average   : 96.33</span>
+                                    <span class="mockup-term-line text-blue">Highest Score   : 98.0 (Priya Sharma)</span>
+                                    <span class="mockup-term-line text-blue">Lowest Score    : 95.5 (Rahul Sen, Amit Das)</span>
+                                    <span class="mockup-term-line text-blue">==========================================</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-subtitle">Verified Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="section-underline"></div>
+
+                <div class="certifications-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M9 11l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3>Data Structures and Algorithms using Java</h3>
+                        <p class="cert-issuer">Awarded by <strong>Infosys</strong></p>
+                        <p class="cert-date">April 21, 2026</p>
+                        <a href="https://www.linkedin.com/posts/anirban-239b3a329_dbms-infosys-virtualinternship7-ugcPost-7451599914624606208-sai_/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFLti80BwJXr0SaETcVb4I-HE-eHcAgSY3s" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+                            Verify Credential
+                            <svg class="verify-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M9 11l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3>Database Management System Part - 1</h3>
+                        <p class="cert-issuer">Awarded by <strong>Infosys</strong></p>
+                        <p class="cert-date">April 18, 2026</p>
+                        <a href="https://www.linkedin.com/posts/anirban-239b3a329_dsa-infosys-share-7470367019796791297-qIBj/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFLti80BwJXr0SaETcVb4I-HE-eHcAgSY3s" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+                            Verify Credential
+                            <svg class="verify-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M9 11l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3>Database Management System Part - 2</h3>
+                        <p class="cert-issuer">Awarded by <strong>Infosys</strong></p>
+                        <p class="cert-date">April 19, 2026</p>
+                        <a href="https://www.linkedin.com/posts/anirban-239b3a329_dsa-infosys-share-7470367019796791297-qIBj/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFLti80BwJXr0SaETcVb4I-HE-eHcAgSY3s" target="_blank" rel="noopener noreferrer" class="cert-verify-link">
+                            Verify Credential
+                            <svg class="verify-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="7" y1="17" x2="17" y2="7"></line>
+                                <polyline points="7 7 17 7 17 17"></polyline>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="section-container">
+                <span class="section-subtitle">Get in Touch</span>
+                <h2 class="section-title">Contact Information</h2>
+                <div class="section-underline"></div>
+
+                <div class="contact-grid">
+                    <div class="contact-cards-container">
+                        <!-- Card 1: Email -->
+                        <div class="contact-info-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </div>
+                            <div class="contact-card-details">
+                                <h4>Email Me</h4>
+                                <a href="mailto:anirbansasmal21@gmail.com">anirbansasmal21@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Phone -->
+                        <div class="contact-info-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            </div>
+                            <div class="contact-card-details">
+                                <h4>Call Me</h4>
+                                <a href="tel:+919382269878">+91 93822 69878</a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Location -->
+                        <div class="contact-info-card">
+                            <div class="contact-card-icon">
+                                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            </div>
+                            <div class="contact-card-details">
+                                <h4>My Location</h4>
+                                <span>Barrackpore, Bara Kanthaliya, West Bengal, India - 700121</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-panel">
+                        <h3>Send a Message</h3>
+                        <form id="portfolio-contact-form">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="form-name">Full Name</label>
+                                    <input type="text" id="form-name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email Address</label>
+                                    <input type="email" id="form-email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" placeholder="Project Discussion" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="btn-submit-form">
+                                Send Message
+                                <svg class="btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <a href="#hero" class="logo">
+                    <span class="logo-accent">&lt;</span>Anirban<span class="logo-accent"> /&gt;</span>
+                </a>
+                <div class="footer-socials">
+                    <a href="https://github.com/anirban0021" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anirban-239b3a329" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:anirbansasmal21@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Anirban Sasmal. All rights reserved.</p>
+                <p class="built-info">Designed &amp; Built with Passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
