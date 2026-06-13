@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
        HERO DYNAMIC TYPING SIMULATOR
        ========================================================================= */
     const typingSpan = document.getElementById('typing-text');
-    const roles = ["Java Developer", "SQL Enthusiast", "Machine Learning Student", "Problem Solver"];
+    const roles = ["Software Engineer", "Java Developer", "SQL Database Designer", "Machine Learning Enthusiast"];
     let roleIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
